@@ -93,6 +93,13 @@ body {
   display: inline-block;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -170px;
+  visibility: hidden;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -166,7 +173,9 @@ body {
   padding: 20px 30px 20px 0px;
 }
 
-.offer-1, .offer-3, .offer-5 {
+.offer-1,
+.offer-3,
+.offer-5 {
   width: 1200px;
   min-height: 300px;
   display: -ms-flexbox;
@@ -174,12 +183,14 @@ body {
   background-color: #fefefe;
 }
 
-.offer-2, .offer-4, .offer-6 {
+.offer-2,
+.offer-4,
+.offer-6 {
   width: 1200px;
   min-height: 300px;
   display: -ms-flexbox;
   display: flex;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 
 .contact {

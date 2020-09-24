@@ -1,6 +1,6 @@
 // fonts
-$roboto: 'Roboto', sans-serif;
-$lato: 'Lato', sans-serif;
+$roboto: "Roboto", sans-serif;
+$lato: "Lato", sans-serif;
 
 //text
 h2 {
@@ -53,7 +53,7 @@ body {
 .navbar-logo-home {
   flex: 1;
 
-  .navbar-logo { 
+  .navbar-logo {
     width: 145px;
     height: 150px;
     background-image: url(../images/logotyp.png);
@@ -62,7 +62,7 @@ body {
   }
 }
 
-.navbar-buttons { 
+.navbar-buttons {
   flex: 2;
   width: 800px;
   align-items: flex-end;
@@ -84,7 +84,6 @@ body {
     color: black;
     background-color: rgb(250, 248, 248);
   }
-
 }
 
 .menu-list li {
@@ -95,6 +94,13 @@ body {
   display: inline-block;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -170px;
+  visibility: hidden;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -103,6 +109,7 @@ body {
   font-size: 17px;
   text-align: left;
   width: 500px;
+
   .button-border {
     padding: 10px 10px;
   }
@@ -114,14 +121,11 @@ body {
       color: black;
     }
   }
-
-  
 }
 
-.nav-offer:hover .dropdown-menu{
+.nav-offer:hover .dropdown-menu {
   display: block;
 }
-
 
 //about
 
@@ -151,11 +155,10 @@ body {
   padding: 20px 30px;
 }
 
-.about-2-2{
+.about-2-2 {
   flex: 1;
   padding: 20px 30px;
 }
-
 
 //offer
 
@@ -170,19 +173,22 @@ body {
   padding: 20px 30px 20px 0px;
 }
 
-.offer-1, .offer-3, .offer-5 {
+.offer-1,
+.offer-3,
+.offer-5 {
   width: 1200px;
   min-height: 300px;
   display: flex;
   background-color: rgb(254, 254, 254);
-  
 }
 
-.offer-2, .offer-4, .offer-6{
+.offer-2,
+.offer-4,
+.offer-6 {
   width: 1200px;
   min-height: 300px;
   display: flex;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 
 //contact
@@ -203,7 +209,7 @@ body {
 
 .contact-logo {
   flex: 20%;
-  
+
   img {
     height: 150px;
     margin-left: 30px;
@@ -218,7 +224,6 @@ body {
     padding: 0px 30px;
   }
 }
-
 
 //footer
 
