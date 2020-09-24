@@ -1,0 +1,71 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  height: 170px;
+  background-color: white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-logo-home {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.navbar-logo-home .navbar-logo {
+  width: 145px;
+  height: 150px;
+  background-image: url(../images/logotyp.png);
+  background-size: cover;
+  margin: 50px 100px 20px 40px;
+}
+
+.navbar-buttons {
+  -ms-flex: 2;
+      flex: 2;
+  width: 800px;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+
+.navbar-buttons a {
+  text-decoration: none;
+  color: #8a0600;
+}
+
+.navbar-buttons .button-border:hover {
+  background-color: yellow;
+}
+
+.menu-list li {
+  display: inline;
+}
+
+.nav-offer {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #e4e4e4;
+}
+
+.nav-offer:hover .dropdown-menu {
+  display: block;
+}
+
+.about {
+  width: 1200px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */
