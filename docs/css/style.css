@@ -43,6 +43,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   width: 1200px;
+  border-bottom: 1px solid #b8b8b8;
   top: 0;
 }
 
