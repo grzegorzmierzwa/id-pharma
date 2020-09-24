@@ -2,13 +2,28 @@
 $roboto: 'Roboto', sans-serif;
 $lato: 'Lato', sans-serif;
 
+//text
+h2 {
+  font-family: $lato;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h3 {
+  font-family: $lato;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+h4 {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 //body
 .container {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
   max-width: 1200px;
-  // justify-content: center;
   margin: auto;
 }
 
@@ -21,7 +36,8 @@ $lato: 'Lato', sans-serif;
   background-color: white;
   text-transform: uppercase;
   font-family: $roboto;
-
+  font-size: 18px;
+  // position: fixed;
 }
 
 .navbar-logo-home {
@@ -30,9 +46,9 @@ $lato: 'Lato', sans-serif;
   .navbar-logo { 
     width: 145px;
     height: 150px;
-    background-image: url(../images/logotyp.png) ;
+    background-image: url(../images/logotyp.png);
     background-size: cover;
-    margin: 50px 100px 20px 40px;
+    margin: 50px 10px 20px 40px;
   }
 }
 
@@ -40,17 +56,25 @@ $lato: 'Lato', sans-serif;
   flex: 2;
   width: 800px;
   align-items: flex-end;
+
+  .link {
+    margin: 0px 80px 10px 10px;
+  }
+
+  .link-lg {
+    margin: 0px 0px 10px 10px;
+  }
+
   a {
     text-decoration: none;
     color: #8a0600;
-    // margin: 5px 30px;
-    // padding: 5px 30px;
   }
 
-  .button-border:hover {
-    
-    background-color: yellow;
+  .link:hover {
+    color: black;
+    background-color: rgb(250, 248, 248);
   }
+
 }
 
 .menu-list li {
@@ -64,7 +88,24 @@ $lato: 'Lato', sans-serif;
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(253, 253, 253);
+  padding: 3px 10px;
+  font-size: 17px;
+  text-align: left;
+  width: 500px;
+  .button-border {
+    padding: 10px 10px;
+  }
+
+  .button-border:hover {
+    background-color: rgb(243, 243, 243);
+
+    a {
+      color: black;
+    }
+  }
+
+  
 }
 
 .nav-offer:hover .dropdown-menu{
@@ -72,9 +113,58 @@ $lato: 'Lato', sans-serif;
 }
 
 
-.about{
+//about
+
+.about-1 {
   width: 1200px;
-  font-family: $roboto;
-  font-weight: 500;
-  font-size: 16px;
+  height: 240px;
+  background-image: url(../images/tło1.png);
+  background-size: cover;
 }
+
+.about-1-1 {
+  width: 700px;
+  padding: 30px;
+}
+
+.about-2 {
+  width: 1200px;
+  height: 260px;
+  background-image: url(../images/tło2.png);
+  background-size: cover;
+  color: white;
+  display: flex;
+}
+
+.about-2-1 {
+  flex: 2;
+  padding: 20px 30px;
+}
+
+.about-2-2{
+  flex: 1;
+  padding: 20px 30px;
+}
+
+
+//offer
+
+.offer-title {
+  flex: 20%;
+  color: #8a0600;
+  padding: 20px 10px 20px 30px;
+}
+
+.offer-content {
+  flex: 80%;
+  padding: 20px 30px 20px 0px;
+
+}
+.offer-1 {
+  width: 1200px;
+  display: flex;
+
+  background-color: rgb(250, 250, 250);
+}
+
+

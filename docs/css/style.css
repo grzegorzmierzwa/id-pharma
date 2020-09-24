@@ -1,3 +1,22 @@
+@charset "UTF-8";
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -12,6 +31,7 @@
   background-color: white;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
 .navbar-logo-home {
@@ -24,7 +44,7 @@
   height: 150px;
   background-image: url(../images/logotyp.png);
   background-size: cover;
-  margin: 50px 100px 20px 40px;
+  margin: 50px 10px 20px 40px;
 }
 
 .navbar-buttons {
@@ -35,13 +55,22 @@
       align-items: flex-end;
 }
 
+.navbar-buttons .link {
+  margin: 0px 80px 10px 10px;
+}
+
+.navbar-buttons .link-lg {
+  margin: 0px 0px 10px 10px;
+}
+
 .navbar-buttons a {
   text-decoration: none;
   color: #8a0600;
 }
 
-.navbar-buttons .button-border:hover {
-  background-color: yellow;
+.navbar-buttons .link:hover {
+  color: black;
+  background-color: #faf8f8;
 }
 
 .menu-list li {
@@ -55,17 +84,80 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #e4e4e4;
+  background-color: #fdfdfd;
+  padding: 3px 10px;
+  font-size: 17px;
+  text-align: left;
+  width: 500px;
+}
+
+.dropdown-menu .button-border {
+  padding: 10px 10px;
+}
+
+.dropdown-menu .button-border:hover {
+  background-color: #f3f3f3;
+}
+
+.dropdown-menu .button-border:hover a {
+  color: black;
 }
 
 .nav-offer:hover .dropdown-menu {
   display: block;
 }
 
-.about {
+.about-1 {
   width: 1200px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  height: 240px;
+  background-image: url(../images/tło1.png);
+  background-size: cover;
+}
+
+.about-1-1 {
+  width: 700px;
+  padding: 30px;
+}
+
+.about-2 {
+  width: 1200px;
+  height: 260px;
+  background-image: url(../images/tło2.png);
+  background-size: cover;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-2-1 {
+  -ms-flex: 2;
+      flex: 2;
+  padding: 20px 30px;
+}
+
+.about-2-2 {
+  -ms-flex: 1;
+      flex: 1;
+  padding: 20px 30px;
+}
+
+.offer-title {
+  -ms-flex: 20%;
+      flex: 20%;
+  color: #8a0600;
+  padding: 20px 10px 20px 30px;
+}
+
+.offer-content {
+  -ms-flex: 80%;
+      flex: 80%;
+  padding: 20px 30px 20px 0px;
+}
+
+.offer-1 {
+  width: 1200px;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fafafa;
 }
 /*# sourceMappingURL=style.css.map */
