@@ -20,6 +20,13 @@ h4 {
 .container {
   max-width: 1200px;
   margin: auto;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 59.2px;
+}
+
+body {
+  margin-bottom: 0;
 }
 
 .navbar {
@@ -28,10 +35,15 @@ h4 {
   -ms-flex-align: end;
       align-items: flex-end;
   height: 170px;
+  padding-top: 15px;
   background-color: white;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 1200px;
+  top: 0;
 }
 
 .navbar-logo-home {
@@ -154,10 +166,69 @@ h4 {
   padding: 20px 30px 20px 0px;
 }
 
-.offer-1 {
+.offer-1, .offer-3, .offer-5 {
   width: 1200px;
+  min-height: 300px;
   display: -ms-flexbox;
   display: flex;
-  background-color: #fafafa;
+  background-color: #fefefe;
+}
+
+.offer-2, .offer-4, .offer-6 {
+  width: 1200px;
+  min-height: 300px;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F3F3F3;
+}
+
+.contact {
+  width: 1200px;
+  height: 260px;
+  background-image: url(../images/tło3.png);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.contact ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-logo {
+  -ms-flex: 20%;
+      flex: 20%;
+}
+
+.contact-logo img {
+  height: 150px;
+  margin-left: 30px;
+}
+
+.contact-content {
+  -ms-flex: 80%;
+      flex: 80%;
+}
+
+.contact-content .contact-list li {
+  display: inline;
+  padding: 0px 30px;
+}
+
+.footer {
+  width: 1200px;
+  background-color: #4b4b4b;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+}
+
+.footer h4 {
+  margin: 0px;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
