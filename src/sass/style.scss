@@ -1,5 +1,4 @@
 // fonts
-$roboto: "Roboto", sans-serif;
 $lato: "Lato", sans-serif;
 
 //text
@@ -19,9 +18,14 @@ h4 {
   font-family: $lato;
   font-weight: 400;
   font-size: 16px;
+  margin: 0;
 }
 
 //body
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -42,7 +46,7 @@ body {
   padding-top: 15px;
   background-color: white;
   text-transform: uppercase;
-  font-family: $roboto;
+  font-family: $lato;
   font-size: 18px;
   position: sticky;
   width: 1200px;
@@ -66,13 +70,20 @@ body {
   flex: 2;
   width: 800px;
   align-items: flex-end;
+  margin-bottom: -8px;
 
   .link {
-    margin: 0px 80px 10px 10px;
+    margin: 0;
+    padding: 10px 50px;
   }
 
   .link-lg {
-    margin: 0px 0px 10px 10px;
+    margin: 0px;
+    padding: 10px 10px;
+  }
+
+  .link-lg-pl {
+    margin-left: 100px;
   }
 
   a {
@@ -82,7 +93,8 @@ body {
 
   .link:hover {
     color: black;
-    background-color: rgb(250, 248, 248);
+    background-color: rgb(243, 243, 243);
+    border-bottom: 1px solid rgb(78, 78, 78);
   }
 }
 
@@ -105,17 +117,18 @@ a.anchor {
   display: none;
   position: absolute;
   background-color: rgb(253, 253, 253);
-  padding: 3px 10px;
-  font-size: 17px;
+  font-size: 16px;
   text-align: left;
   width: 500px;
+  margin-top: 11px;
 
   .button-border {
-    padding: 10px 10px;
+    padding: 10px 20px;
   }
 
   .button-border:hover {
     background-color: rgb(243, 243, 243);
+    border-bottom: 1px solid rgb(78, 78, 78);
 
     a {
       color: black;
@@ -131,7 +144,7 @@ a.anchor {
 
 .about-1 {
   width: 1200px;
-  height: 240px;
+  height: 290px;
   background-image: url(../images/tło1.png);
   background-size: cover;
 }
@@ -143,7 +156,7 @@ a.anchor {
 
 .about-2 {
   width: 1200px;
-  height: 260px;
+  height: 350px;
   background-image: url(../images/tło2.png);
   background-size: cover;
   color: white;
@@ -153,6 +166,10 @@ a.anchor {
 .about-2-1 {
   flex: 2;
   padding: 20px 30px;
+  
+  ul {
+    padding-left: 15px;
+  }
 }
 
 .about-2-2 {
@@ -165,7 +182,7 @@ a.anchor {
 .offer-title {
   flex: 20%;
   color: #8a0600;
-  padding: 20px 10px 20px 30px;
+  padding: 20px 15px 20px 30px;
 }
 
 .offer-content {
@@ -180,6 +197,14 @@ a.anchor {
   min-height: 300px;
   display: flex;
   background-color: rgb(254, 254, 254);
+
+  ul {
+    padding-left: 15px;
+    
+    li {
+      padding: 4px 0;
+    }
+  }
 }
 
 .offer-2,
@@ -189,6 +214,14 @@ a.anchor {
   min-height: 300px;
   display: flex;
   background-color: #f3f3f3;
+
+  ul {
+    padding-left: 15px;
+
+    li {
+      padding: 4px 0;
+    }
+  }
 }
 
 //contact
@@ -205,6 +238,8 @@ a.anchor {
 .contact ul li a {
   text-decoration: none;
   color: black;
+  display: inline;
+
 }
 
 .contact-logo {
@@ -220,8 +255,8 @@ a.anchor {
   flex: 80%;
 
   .contact-list li {
-    display: inline;
-    padding: 0px 30px;
+    display: inline-block;
+    padding: 0px 25px;
   }
 }
 
