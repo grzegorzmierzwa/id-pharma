@@ -37,6 +37,16 @@ html {
 body {
   margin-bottom: 0;
 }
+
+//active container
+
+.container {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
 // navbar
 
 .navbar {
