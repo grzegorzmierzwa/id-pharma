@@ -34,6 +34,14 @@ body {
   margin-bottom: 0;
 }
 
+.container {
+  display: none;
+}
+
+.container.active {
+  display: block;
+}
+
 .navbar {
   display: -ms-flexbox;
   display: flex;
